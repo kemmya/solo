@@ -25,7 +25,7 @@ class Result:
         # Returns => Nothing
         # Side effects: Empty list in new variable "learners" 
         pass # No code here yet
-    def add(self, name):
+    def add_learner(self,name):
         # Parameters: name string
         # returns: names of learners
     def track_learners(self, name):
@@ -44,11 +44,18 @@ _Make a list of examples of how the class will behave in different situations._
 r = Result()
 r.learners # => []
 
-self.name = name
-return self.name
+self.name = name          # => when names of learners are added
+self.learners.append(name)
+
+if learner not in learner_list:      # => To know that learner name has been added to list
+learner_list.append(learner)        
+return learner_list
 
 
-self._name.append(name) 
+if learner in learner_list:         # => To know who passed the challenge
+leaner_list.remove(learner)
+return learner_list 
+
 
 ```
 
