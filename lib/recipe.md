@@ -19,7 +19,7 @@ _Include the initializer, public properties, and public methods with all paramet
 ```python
 
 
-class Result:
+class Student:
     def __init__(self):
         # Parameters => None
         # Returns => Nothing
@@ -41,23 +41,40 @@ class Result:
 _Make a list of examples of how the class will behave in different situations._
 
 ``` 
-r = Result()
-r.learners # => []
+# Initially there are no names of learners
+s = Student() 
+s.learners() # => []
 
-self.name = name          # => when names of learners are added
-self.learners.append(name)
-
-if learner not in learner_list:      # => To know that learner name has been added to list
-learner_list.append(learner)        
-return learner_list
+# when names of learners are added
+s = Student()   
+s.learners_list.append(name)    
 
 
-if learner in learner_list:         # => To know who passed the challenge
-leaner_list.remove(learner)
-return learner_list 
+# => To know who done the challenge
+s = Student()   
+s.learners_list.append(name)   
+s.learner_list() # => []
+    if passed_learner in learner_list:         
+        leaner_list.remove(passed_learner)  # => learner_list  
 
 
 ```
 
 ## Implement the behaviour
+
+"""
+When single name is added to list of learners that have the challenge
+"""
+def test_single_name_added():
+
+"""
+When multiple name is added to the list of learners that have done the challenge
+"""
+def test_multiple_names_added():
+
+"""
+When we remove names of learners who have not done the challenge
+That will give us the list of learners who have done the challenge
+"""
+def test_remove_names_of_learners_not_done_challenge():
 
