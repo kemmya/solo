@@ -54,16 +54,17 @@ l = ChallengeTracking()
 l.add_learner("Kemi")
 l.add_learner("Reese")
 l.add_learner("Oli")
-l.list_learners()    # => ["Kemi", "Reese", "Oli"]
+l.added_learners    # => ["Kemi", "Reese", "Oli"]
 
 
 
 
 # To track learners who done the challenge
-l = ChallengeTracking()   
-l.track_learners("Kemi", "Reese", "Oli")    
-l.list_learners(tracked)   # => ["Kemi", "Reese", "Oli"]
-
+l = ChallengeTracking()
+l.add_learner("Kemi")
+l.add_learner("Reese")
+l.add_learner("Oli")
+l.track_learners    # => ["Kemi", "Reese", "Oli"]
 
 ```
 
