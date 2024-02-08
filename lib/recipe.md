@@ -19,7 +19,7 @@ _Include the initializer, public properties, and public methods with all paramet
 ```python
 
 
-class Student:
+class ChallengeTracking:
     def __init__(self):
         # Parameters => None
         # Returns => Nothing
@@ -42,20 +42,18 @@ _Make a list of examples of how the class will behave in different situations._
 
 ``` 
 # Initially there are no names of learners
-s = Student() 
-s.learners() # => []
+l = Learners() 
+l.learners() # => []
 
 # when names of learners are added
-s = Student()   
-s.learners_list.append(name)    
+l = Learner()   
+l.learners_list.append # => ["Kemi"]
 
 
-# => To know who done the challenge
-s = Student()   
-s.learners_list.append(name)   
-s.learner_list() # => []
-    if passed_learner in learner_list:         
-        leaner_list.remove(passed_learner)  # => learner_list  
+# To know who done the challenge
+l = Learner()   
+l.learners_list.append["Kemi"]         
+learners_list.remove(passed_learner)  # => learner_list  
 
 
 ```
