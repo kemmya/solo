@@ -25,7 +25,7 @@ class ChallengeTracking:
         # Returns => Nothing
         # Side effects: Empty list in new variable "learners" 
         pass # No code here yet
-    def add_learner(self,name):
+    def add_learner(self, name):
         # Parameters: name string
         # returns: names of learners
     def track_learners(self, name):
@@ -42,18 +42,27 @@ _Make a list of examples of how the class will behave in different situations._
 
 ``` 
 # Initially there are no names of learners
-l = Learners() 
-l.learners() # => []
+l = ChallengeTracking() 
+l.learners # => []
 
 # when names of learners are added
-l = Learner()   
-l.learners_list.append # => ["Kemi"]
+l = ChallengeTracking()   
+l.add_learner("Kemi") # => ["Kemi"]
+
+# when multiple names of learners are added
+l = ChallengeTracking()
+l.add_learner("Kemi")
+l.add_learner("Reese")
+l.add_learner("Oli")
+l.list_learners()    # => ["Kemi", "Reese", "Oli"]
 
 
-# To know who done the challenge
-l = Learner()   
-l.learners_list.append["Kemi"]         
-learners_list.remove(passed_learner)  # => learner_list  
+
+
+# To track learners who done the challenge
+l = ChallengeTracking()   
+l.track_learners("Kemi", "Reese", "Oli")    
+l.list_learners(tracked)   # => ["Kemi", "Reese", "Oli"]
 
 
 ```
@@ -61,18 +70,18 @@ learners_list.remove(passed_learner)  # => learner_list
 ## Implement the behaviour
 
 """
-When single name is added to list of learners that have the challenge
+When single name is added to list of learners that have done the challenge
 """
 def test_single_name_added():
 
 """
-When multiple name is added to the list of learners that have done the challenge
+When multiple name of learners is added to the list of learners that have done the challenge
 """
 def test_multiple_names_added():
 
 """
-When we remove names of learners who have not done the challenge
+When we track names of learners who have  done the challenge
 That will give us the list of learners who have done the challenge
 """
-def test_remove_names_of_learners_not_done_challenge():
+def test_tracked_learners():
 
