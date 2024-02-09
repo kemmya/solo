@@ -25,7 +25,7 @@ class ChallengeTracking:
         # Returns => Nothing
         # Side effects: Empty list in new variable "learners" 
         pass # No code here yet
-    def add_learners(self, name):
+    def add_learner(self, name):
         # Parameters: name string
         # returns: names of learners
     def track_learners(self, name):
@@ -47,23 +47,14 @@ l.learners # => []
 
 # when a name of one of the learners is added
 l = ChallengeTracking()   
-l.add_learners("Kemi") # => ["Kemi"]
-
-# when multiple names of learners are added
-l = ChallengeTracking()
-l.add_learners("Kemi")
-l.add_learners("Reese")
-l.add_learners("Oli")
-l.add_learners()    # => ["Kemi", "Reese", "Oli"]
-
-
+l.add_learner("Kemi") # => ["Kemi"]
 
 
 # To track learners who done the challenge
 l = ChallengeTracking()
-l.add_learners("Kemi")
-l.add_learners("Reese")
-l.add_learners("Oli")
+l.add_learner("Kemi")
+l.add_learner("Reese")
+l.add_learner("Oli")
 l.track_learners()   # => ["Kemi", "Reese", "Oli"]
 
 ```
@@ -76,12 +67,7 @@ When single name is added to list of learners that have done the challenge
 def test_single_name_added():
 
 """
-When multiple name of learners is added to the list of learners that have done the challenge
-"""
-def test_multiple_names_added():
-
-"""
-When we track names of learners who have  done the challenge
+When multiple names of learners are added and we track the names of learners who have  done the challenge
 That will give us the list of learners who have done the challenge
 """
 def test_tracked_learners():
