@@ -25,7 +25,7 @@ class ChallengeTracking:
         # Returns => Nothing
         # Side effects: Empty list in new variable "learners" 
         pass # No code here yet
-    def add_learner(self, name):
+    def add_learners(self, name):
         # Parameters: name string
         # returns: names of learners
     def track_learners(self, name):
@@ -45,25 +45,25 @@ _Make a list of examples of how the class will behave in different situations._
 l = ChallengeTracking() 
 l.learners # => []
 
-# when names of learners are added
+# when a name of one of the learners is added
 l = ChallengeTracking()   
-l.add_learner("Kemi") # => ["Kemi"]
+l.add_learners("Kemi") # => ["Kemi"]
 
 # when multiple names of learners are added
 l = ChallengeTracking()
-l.add_learner("Kemi")
-l.add_learner("Reese")
-l.add_learner("Oli")
-l.added_learners()    # => ["Kemi", "Reese", "Oli"]
+l.add_learners("Kemi")
+l.add_learners("Reese")
+l.add_learners("Oli")
+l.add_learners()    # => ["Kemi", "Reese", "Oli"]
 
 
 
 
 # To track learners who done the challenge
 l = ChallengeTracking()
-l.add_learner("Kemi")
-l.add_learner("Reese")
-l.add_learner("Oli")
+l.add_learners("Kemi")
+l.add_learners("Reese")
+l.add_learners("Oli")
 l.track_learners()   # => ["Kemi", "Reese", "Oli"]
 
 ```
