@@ -55,7 +55,7 @@ l = ChallengeTracking()
 l.add_learner("Kemi")
 l.add_learner("Reese")
 l.add_learner("Oli")
-l.track_learners()   # => ["Kemi", "Reese", "Oli"]
+l.track_learners()   # => ["Kemi" "Reese" "Oli"]
 
 ```
 
